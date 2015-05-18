@@ -1,0 +1,50 @@
+{
+    "name": "tonis/tonis",
+    "authors": [
+        {
+            "name": "Kyle Spraggs",
+            "email": "theman@spiffyjr.me"
+        }
+    ],
+    "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
+    "license": "BSD-3-Clause",
+    "repositories": [
+        {"type": "vcs", "url": "git@github.com:tonis-io/hookline.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/di.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/dispatcher.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/mvc.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/package-manager.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/router.git"},
+        {"type": "vcs", "url": "git@github.com:tonis-io/view.git"}
+    ],
+    "require": {
+        "php": ">=5.4",
+        "phly/conduit": "dev-master",
+        "tonis/di": "dev-master",
+        "tonis/dispatcher": "dev-master",
+        "tonis/hookline": "dev-master",
+        "tonis/mvc": "dev-master",
+        "tonis/package-manager": "dev-master",
+        "tonis/router": "dev-master",
+        "tonis/view": "dev-master",
+        "twig/twig": "~1.18"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tonis\\": [
+                "src/",
+                "test/"
+            ]
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
