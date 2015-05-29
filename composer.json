@@ -21,6 +21,7 @@
         "php": ">=5.5",
         "zendframework/zend-stratigility": "^1.0.0",
         "zendframework/zend-diactoros": "^1.0.0",
+
         "tonis/di": "dev-master",
         "tonis/dispatcher": "dev-master",
         "tonis/hookline": "dev-master",
@@ -33,9 +34,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Example\\": [
-                "package/example/src/",
-                "package/example/test/"
+            "Test\\": [
+                "package/test/src/"
             ]
         }
     },
