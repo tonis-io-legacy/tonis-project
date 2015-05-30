@@ -8,29 +8,11 @@
     ],
     "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {"type": "vcs", "url": "git@github.com:tonis-io/hookline.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/di.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/dispatcher.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/mvc.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/package-manager.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/router.git"},
-        {"type": "vcs", "url": "git@github.com:tonis-io/view.git"}
-    ],
     "require": {
         "php": ">=5.5",
-        "zendframework/zend-stratigility": "^1.0.0",
-        "zendframework/zend-diactoros": "^1.0.0",
-
-        "tonis/di": "dev-master",
-        "tonis/dispatcher": "dev-master",
-        "tonis/hookline": "dev-master",
-        "tonis/mvc": "dev-master",
-        "tonis/package-manager": "dev-master",
-        "tonis/router": "dev-master",
-        "tonis/view": "dev-master",
         "league/plates": "^3.0",
-        "twig/twig": "^1.18"
+        "twig/twig": "^1.18",
+        "zendframework/zend-diactoros": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
