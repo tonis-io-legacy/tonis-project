@@ -1,7 +1,9 @@
 Tonis
 =====
 
-Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.
+Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework. The name came from 
+[Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) in the world of [Elanthia](https://gswiki.play.net/mediawiki/index.php/Elanthia).
+[Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) is the messenger of the gods and is renowned for his speed.
 
 Components
 ----------
