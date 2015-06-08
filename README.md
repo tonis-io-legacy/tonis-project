@@ -1,9 +1,14 @@
 Tonis
 =====
 
-Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework. The name came from 
-[Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) in the world of [Elanthia](https://gswiki.play.net/mediawiki/index.php/Elanthia).
-[Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) is the messenger of the gods and is renowned for his speed.
+Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.
+
+The Name
+--------
+I originally got into programming by writing scripts for a game called [Gemstone 3](http://www.play.net/gs4/) 
+(now Gemstone IV). The name came from [Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) in the world of 
+[Elanthia](https://gswiki.play.net/mediawiki/index.php/Elanthia). He is the messenger of the gods and is renowned for 
+his speed.
 
 Components
 ----------
