@@ -8,7 +8,7 @@ $tonis = \Tonis\Mvc\Factory\TonisFactory::fromDefaults([
 ]);
 
 $routes = $tonis->routes();
-$routes->get('/hello/{name}', function($name) {
+$routes->get('/hello/{name}', function ($name) {
     return sprintf('Welcome to the homepage, %s', $name);
 });
 
