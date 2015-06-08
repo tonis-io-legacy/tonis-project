@@ -6,11 +6,13 @@
             "email": "theman@spiffyjr.me"
         }
     ],
-    "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
+    "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
         "league/plates": "^3.0",
+        "symfony/console": "^2.7",
+        "tonis/mvc": "dev-master",
         "zendframework/zend-diactoros": "^1.0.0"
     },
     "autoload": {
@@ -20,6 +22,8 @@
             ]
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"

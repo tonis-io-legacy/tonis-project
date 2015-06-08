@@ -1,18 +1,14 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-$tonis = new Tonis\Mvc\Tonis([
+$tonis = \Tonis\Mvc\Factory\TonisFactory::fromDefaults([
     'environment' => [
         'TONIS_DEBUG' => true
     ]
 ]);
-$routes = $tonis->getRouteCollection();
 
-$routes->get('/', function() {
-    return 'Welcome to the homepage';
-});
-
-$routes->get('/{name}', function($name) {
+$routes = $tonis->routes();
+$routes->get('/hello/{name}', function($name) {
     return sprintf('Welcome to the homepage, %s', $name);
 });
 
