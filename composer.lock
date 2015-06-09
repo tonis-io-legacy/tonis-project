@@ -320,12 +320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/asset.git",
-                "reference": "ceb1c4f0451deabf360e827c331298dd089c6458"
+                "reference": "57187130e546a5486caaede5766f5eeb1753cfd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/asset/zipball/ceb1c4f0451deabf360e827c331298dd089c6458",
-                "reference": "ceb1c4f0451deabf360e827c331298dd089c6458",
+                "url": "https://api.github.com/repos/tonis-io/asset/zipball/57187130e546a5486caaede5766f5eeb1753cfd9",
+                "reference": "57187130e546a5486caaede5766f5eeb1753cfd9",
                 "shasum": ""
             },
             "require": {
@@ -360,7 +360,7 @@
                 }
             ],
             "description": "Tonis\\Asset is a light-weight, HHVM compatible, and dependency lite package manager.",
-            "time": "2015-06-08 16:24:13"
+            "time": "2015-06-09 02:53:03"
         },
         {
             "name": "tonis/di",
@@ -368,12 +368,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/di.git",
-                "reference": "41d62c87c1c70078726c5998d1948dc4cab43321"
+                "reference": "d44648bfa4512b06598a5396a601590b9d95b3a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/di/zipball/41d62c87c1c70078726c5998d1948dc4cab43321",
-                "reference": "41d62c87c1c70078726c5998d1948dc4cab43321",
+                "url": "https://api.github.com/repos/tonis-io/di/zipball/d44648bfa4512b06598a5396a601590b9d95b3a2",
+                "reference": "d44648bfa4512b06598a5396a601590b9d95b3a2",
                 "shasum": ""
             },
             "require": {
@@ -414,7 +414,7 @@
                 }
             ],
             "description": "A light-weight, HHVM compatible, and dependency lite DI container.",
-            "time": "2015-06-07 19:48:58"
+            "time": "2015-06-09 02:53:25"
         },
         {
             "name": "tonis/dispatcher",
@@ -517,12 +517,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/mvc.git",
-                "reference": "a1829b0bc58de366c84fcc3b9473d3a7872c8d3f"
+                "reference": "87f07d70ae9117ef91137f8830b44c3753c64abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/mvc/zipball/a1829b0bc58de366c84fcc3b9473d3a7872c8d3f",
-                "reference": "a1829b0bc58de366c84fcc3b9473d3a7872c8d3f",
+                "url": "https://api.github.com/repos/tonis-io/mvc/zipball/87f07d70ae9117ef91137f8830b44c3753c64abc",
+                "reference": "87f07d70ae9117ef91137f8830b44c3753c64abc",
                 "shasum": ""
             },
             "require": {
@@ -572,7 +572,7 @@
                 }
             ],
             "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
-            "time": "2015-06-08 16:27:32"
+            "time": "2015-06-09 03:27:21"
         },
         {
             "name": "tonis/package",
