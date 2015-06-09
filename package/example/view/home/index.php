@@ -1,5 +1,5 @@
 <?php $this->layout('layout::layout') ?>
 
 <?php $this->start('body') ?>
-    <?=$css->getTargetPath()?>
+    Hello, <?=$name?>, welcome to Tonis!
 <?php $this->stop() ?>
