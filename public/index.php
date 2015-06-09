@@ -6,7 +6,8 @@ $tonis = \Tonis\Mvc\Factory\TonisFactory::fromDefaults([
         'TONIS_DEBUG' => true
     ],
     'packages' => [
-        \ExamplePackage\Package::class
+        \ExamplePackage\Package::class,
+        \Tonis\Asset\AssetPackage::class
     ]
 ]);
 
