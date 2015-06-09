@@ -10,7 +10,7 @@ $factory = new TonisFactory;
 
 $app = new \Zend\Stratigility\MiddlewarePipe();
 $app->pipe('/api', $factory->fromApiDefaults($config));
-$app->pipe($factory->fromDefaults($config));
+$app->pipe($factory->fromWebDefaults($config));
 
 $server = Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();

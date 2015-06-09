@@ -1,10 +1,8 @@
 <?php
 return [
-    'mvc'=> [
-        'plates' => [
-            'folders' => [
-                'layout' => __DIR__ . '/../view/layout'
-            ]
+    'plates' => [
+        'folders' => [
+            'layout' => __DIR__ . '/../view/layout'
         ]
     ]
 ];
