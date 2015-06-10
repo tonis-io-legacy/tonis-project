@@ -31,7 +31,16 @@ $routes->delete('/', function () {
 });
 ```
 
-To generate a url from a route you may use the `assemble()` method.
+Assembling URLs
+---------------
+
+In order to assemble a route you must have given it a name.
+
+```php
+$routes->get('/', function () {}, 'name');
+```
+
+To generate a url from a route you may use the `assemble()` method on the `RouteCollection`.
  
 ```php
 $routes->assemble('name')
