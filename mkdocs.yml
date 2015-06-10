@@ -5,12 +5,15 @@ site_url: http://tonis.io
 repo_url: https://github.com/tonis-io/tonis/
 theme: readthedocs
 pages:
-- Home: 'index.md'
+- What is Tonis?: 'index.md'
 - Getting Started:
   - 'Installation': 'getting-started/installation.md'
+  - 'Contributing': 'getting-started/contributing.md'
+  - 'License': 'getting-started/license.md'
 - Basics:
-  - 'Actions': 'basics/actions.md'
   - 'Routing': 'basics/routing.md'
+  - 'Actions': 'basics/actions.md'
+  - 'View Manager': 'basics/view-manager.md'
   - 'Services': 'basics/services.md'
   - 'Packages': 'basics/packages.md'
 - Advanced Topics:

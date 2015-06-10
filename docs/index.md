@@ -1,6 +1,3 @@
-What is Tonis?
-==============
-
 Tonis is a PSR-7 micro-framework that can also be used as MVC middleware. Tonis was built for flexibility and performance
 while still having the modularity of larger frameworks. Tonis features an event-driven architecture that allows you to 
 easily customize the entire life-cycle for micro-services, apis, or even full on sites.
@@ -28,8 +25,5 @@ Tonis includes the following features out of the box:
   * Package (reusable chunks of code) management
   * 100% test coverage on all components
   * High quality (9.5+ on Scrutiniizer) components
-
-Additionally, the following core packages are available:
-
-  * Asset management
-  * Doctrine ORM
+  
+See [Components & Packages](/other/components-and-packages) for a list of officially supported components and packages.

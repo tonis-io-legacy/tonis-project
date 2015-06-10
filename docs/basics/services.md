@@ -1,6 +1,3 @@
-Service Container (Tonis\Di)
-============================
-
 Tonis features a light-weight and simple dependency injection container to help with inversion of control. You can 
 read more about inversion of control on [Martin Fowler's site](http://martinfowler.com/articles/injection.html).
 
