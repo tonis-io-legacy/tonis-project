@@ -5,6 +5,9 @@ Tonis is a PSR-7 micro-framework that can also be used as MVC middleware. Tonis 
 while still having the modularity of larger frameworks. Tonis features an event-driven architecture that allows you to 
 easily customize the entire life-cycle for micro-services, apis, or even full on sites.
 
+Tonis is built with best practices in mind and features 100% unit test coverage, integration tests, and high quality
+(rated 9.5 or higher) on Scrutinizer. No pull request will ever be merged that violates any of these standards.
+
 The Name
 --------
 
@@ -22,7 +25,9 @@ Tonis includes the following features out of the box:
   * Dependency Injection
   * Middleware support
   * PSR-7 compliant
-  * Package (reusable chunks of code) management 
+  * Package (reusable chunks of code) management
+  * 100% test coverage on all components
+  * High quality (9.5+ on Scrutiniizer) components
 
 Additionally, the following core packages are available:
 
