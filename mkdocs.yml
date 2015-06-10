@@ -1,2 +1,22 @@
 site_name: Tonis
+site_author: Kyle Spraggs
+copyright: 2015 Kyle Spraggs. All Rights Reserved.
+site_url: http://tonis.io
+repo_url: https://github.com/tonis-io/tonis/
 theme: readthedocs
+pages:
+- Home: 'index.md'
+- Getting Started:
+  - 'Installation': 'getting-started/installation.md'
+- Basics:
+  - 'Actions': 'basics/actions.md'
+  - 'Routing': 'basics/routing.md'
+  - 'Services': 'basics/services.md'
+  - 'Packages': 'basics/packages.md'
+- Advanced Topics:
+  - 'Request/Response Lifecycle': 'advanced/lifecycle.md'
+- Development:
+  - 'Vagrant': 'development/vagrant.md'
+  - 'Docker': 'development/docker.md'
+- Other:
+  - 'Components & Packages': 'other/components-and-packages.md'
