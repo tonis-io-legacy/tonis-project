@@ -12,11 +12,12 @@ pages:
   - 'License': 'getting-started/license.md'
 - Basics:
   - 'Routing': 'basics/routing.md'
-  - 'Actions': 'basics/actions.md'
-  - 'View Manager': 'basics/view-manager.md'
+  - 'Dispatching': 'basics/dispatching.md'
+  - 'Views': 'basics/views.md'
   - 'Services': 'basics/services.md'
   - 'Packages': 'basics/packages.md'
 - Advanced Topics:
+  - 'Middleware': 'advanced/middleware.md'
   - 'Request/Response Lifecycle': 'advanced/lifecycle.md'
 - Development:
   - 'Vagrant': 'development/vagrant.md'

@@ -26,6 +26,6 @@ Tonis includes the following features out of the box:
   * PSR-7 compliant
   * Package (reusable chunks of code) management
   * 100% test coverage on all components
-  * High quality (9.5+ on Scrutiniizer) components
+  * High quality components
   
 See [Components & Packages](/other/components-and-packages) for a list of officially supported components and packages.

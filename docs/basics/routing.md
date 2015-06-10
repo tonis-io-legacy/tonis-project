@@ -39,6 +39,13 @@ $routes->delete('/', function () {
 });
 ```
 
+Route Handler
+--------------
+
+The second parameter of any method above is the handler. The handler is what `Tonis\Dispatcher` uses to create the 
+dispatchable resource and generate a dispatch result. View the [Dispatching documentation](/basics/dispatching) for 
+more information.
+
 Route Parameters
 ----------------
 
