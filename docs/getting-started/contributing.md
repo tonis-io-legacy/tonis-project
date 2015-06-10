@@ -2,11 +2,18 @@ Tonis and related components are open source and licensed as BSD-3-Clause. Contr
 reports and pull requests. All pull requests should meet the requirements outlined on the [Components & Packages](/other/components-and-packages) 
 page.
 
+Getting the Source
+------------------
+
+```sh
+git clone git@github.com:tonis-io/tonis
+composer install
+```
+
 Running Tests
 -------------
 
 ```sh
-composer install
 ./vendor/bin/phpunit -c test/phpunit.xml
 ```
 
@@ -21,3 +28,9 @@ vendor/bin/phpcs --standard=PSR2 -s -p src/ test/
 ```
 
 Additonally, this is automatically checked by [Travis CI](https://travis-ci.org) and will cause a build failure if not valid.
+
+Documentation
+-------------
+
+After "Getting the Source" steps above you can find the documentation in in the `docs/` folder. All documentation is written
+in markdown. Once you update the documentation, commit your changes and open a pull request.
