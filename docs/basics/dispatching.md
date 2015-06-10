@@ -58,3 +58,22 @@ class MyViewAction
 $routes->get('/', MyAction::class);
 $routes->get('/{id}', MyViewAction::class]);
 ```
+
+Using the Service Container
+---------------------------
+
+If your dispatchable is [registered with the service container](/basics/services) you can pass the service name to the
+route and it will be pulled from the service container.
+ 
+```php
+class MyController
+{
+    public function __construct(Foo $foo) { ... }
+    public function indexAction() { ... }
+    public function viewAction($id) { ... }
+}
+
+$di->set('my.controller', function (\Tonis\Di\Container $di) {
+    return new MyController($di->get('foo'));
+});
+```
