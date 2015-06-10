@@ -146,10 +146,10 @@ $di->wrap(Dog::class, function (\Tonis\Di\Container $di, $serviceName, $callable
 $di->wrap(Dog::class, function (\Tonis\Di\Container $di, $serviceName, $callable) {
     return new MyDog($callable());
 });
+```
 
 A good use-case for wrap is modifying the service definitions provided by third-party packages. For example, if there
 is a particularly heavy service you could wrap it in a Lazy Proxy to delay the execution until required.
-```
 
 Best Practices
 --------------
