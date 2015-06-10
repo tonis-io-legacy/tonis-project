@@ -1,7 +1,9 @@
 Vagrant
 =======
 
-Tonis comes with a Vagrantfile.  Utilizing [Vagrant](https://www.vagrantup.com), the working directory will be synced with the virtualized environment.  You will need to have both [Vagrant](https://www.vagrantup.com) and [Docker](https://www.docker.com) installed.  You are responsible for running composer and bower from the host.
+Tonis comes with a Vagrantfile. Utilizing [Vagrant](https://www.vagrantup.com), the working directory will be synced 
+with the virtualized environment. You will need to have both [Vagrant](https://www.vagrantup.com) and 
+[Docker](https://www.docker.com) installed. You are responsible for running composer and bower from the host.
 
 ```sh
 sudo vagrant up --provider=docker

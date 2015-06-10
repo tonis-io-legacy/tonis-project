@@ -11,6 +11,7 @@ pages:
   - 'Contributing': 'getting-started/contributing.md'
   - 'License': 'getting-started/license.md'
 - Basics:
+  - 'Configuration': 'basics/configuration.md'
   - 'Routing': 'basics/routing.md'
   - 'Dispatching': 'basics/dispatching.md'
   - 'Views': 'basics/views.md'
