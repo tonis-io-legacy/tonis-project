@@ -7,24 +7,23 @@ theme: readthedocs
 pages:
 - What is Tonis?: 'index.md'
 - Getting Started:
-  - 'Installation': 'getting-started/installation.md'
-  - 'Contributing': 'getting-started/contributing.md'
-  - 'License': 'getting-started/license.md'
+  - getting-started/installation.md
+  - getting-started/contributing.md
+  - getting-started/license.md
 - Configuration:
-  - 'Overview': 'configuration/overview.md'
-  - 'configuration/debug.md'
+  - configuration/overview.md
+  - configuration/settings.md
 - Basics:
-  - 'Configuration': 'basics/configuration.md'
-  - 'Routing': 'basics/routing.md'
-  - 'Dispatching': 'basics/dispatching.md'
-  - 'Views': 'basics/views.md'
-  - 'Services': 'basics/services.md'
-  - 'Packages': 'basics/packages.md'
+  - basics/routing.md
+  - basics/dispatching.md
+  - basics/views.md
+  - basics/services.md
+  - basics/packages.md
 - Advanced Topics:
-  - 'Middleware': 'advanced/middleware.md'
-  - 'Request/Response Lifecycle': 'advanced/lifecycle.md'
+  - advanced/middleware.md
+  - advanced/lifecycle.md
 - Development:
-  - 'Vagrant': 'development/vagrant.md'
-  - 'Docker': 'development/docker.md'
+  - development/vagrant.md
+  - development/docker.md
 - Other:
   - 'Components & Packages': 'other/components-and-packages.md'
