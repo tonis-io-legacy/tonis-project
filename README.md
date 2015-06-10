@@ -1,14 +1,9 @@
 Tonis
 =====
 
-Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.
-
-The Name
---------
-I originally got into programming by writing scripts for a game called [Gemstone III](http://www.play.net/gs4/) 
-(now Gemstone IV). The name came from [Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) in the world of 
-[Elanthia](https://gswiki.play.net/mediawiki/index.php/Elanthia). He is the messenger of the gods and is renowned for 
-his speed.
+Tonis is a PSR-7 micro-framework that can also be used as MVC middleware. Tonis was built for flexibility and performance
+while still having the modularity of larger frameworks. Tonis features an event-driven architecture that allows you to 
+easily customize the entire life-cycle for micro-services, apis, or even full on sites.
 
 Components
 ----------
@@ -23,53 +18,28 @@ Components
 | [Router](https://github.com/tonis-io/router)         | [![Build Status](https://scrutinizer-ci.com/g/tonis-io/router/badges/build.png)](https://scrutinizer-ci.com/g/tonis-io/router)         | [![Code Coverage](https://scrutinizer-ci.com/g/tonis-io/router/badges/coverage.png)](https://scrutinizer-ci.com/g/tonis-io/router/)         | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tonis-io/router/badges/quality-score.png)](https://scrutinizer-ci.com/g/tonis-io/router/)         |
 | [View](https://github.com/tonis-io/view)             | [![Build Status](https://scrutinizer-ci.com/g/tonis-io/view/badges/build.png)](https://scrutinizer-ci.com/g/tonis-io/view)             | [![Code Coverage](https://scrutinizer-ci.com/g/tonis-io/view/badges/coverage.png)](https://scrutinizer-ci.com/g/tonis-io/view/)             | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tonis-io/view/badges/quality-score.png)](https://scrutinizer-ci.com/g/tonis-io/view/)             |
 
-Installation
-------------
-
-```sh
-composer require tonis-io/mvc
-```
-
 Quick Start
 -----------
 
+```sh
+composer require tonis/mvc
+```
+
 ```php
 <?php
-include 'vendor/autoload.php'
+require __DIR__ . '/vendor/autoload.php';
 
-$tonis = \Tonis\Mvc\Factory\TonisFactory::fromDefaults();
-
+$tonis = (new \Tonis\Mvc\Factory\TonisFactory)->createWeb();
 $routes = $tonis->routes();
+
 $routes->get('/hello/{name}', function ($name) {
-    return sprintf('Welcome to the homepage, %s', $name);    
+    return 'Hello ' . $name;
 });
 
-$tonis->run();
+echo $tonis->run()->getBody();
 ```
 
-Vagrant
--------
+Documentation
+-------------
 
-Tonis comes with a Vagrantfile.  Utilizing [Vagrant](https://www.vagrantup.com), the working directory will be synced with the virtualized environment.  You will need to have both [Vagrant](https://www.vagrantup.com) and [Docker](https://www.docker.com) installed.  You are responsible for running composer and bower from the host.
-
-```sh
-sudo vagrant up --provider=docker
-```
-
-SSH is not enabled, but you can still get a shell prompt in the container.
-
-```sh
-$ sudo docker ps
-CONTAINER ID        IMAGE                             COMMAND             CREATED             STATUS              PORTS                  NAMES
-45d0c5d94ee0        czeeb/tonis-docker-nginx:latest   "/sbin/my_init"     13 minutes ago      Up 13 minutes       0.0.0.0:8080->80/tcp   tonis_nginx_1433860664
-
-$ sudo docker exec -t -i tonis_nginx_1433860664 bash -l
-root@45d0c5d94ee0:/#
-```
-
-Docker
-------
-
-A Dockerfile has also been included.  The difference between using Vagrant and [Docker](https://www.docker.com) is that any changes made to the code after the Docker container has been created will not be reflected in the container.  The primary usage of the docker container is for production where code only changes on deployment.
-
-The Dockerfile takes care of running both composer and bower when the container is built.
+Documentation can be found in the `docs/` subdirectory.
