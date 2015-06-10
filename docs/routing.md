@@ -31,6 +31,29 @@ $routes->delete('/', function () {
 });
 ```
 
+Route Parameters
+----------------
+
+```php
+// required name parameter - matches /hello/tonis
+$routes->get('/hello/{name}', ...);
+
+// optional name parameter - matches /hello or /hello/tonis
+$routes->get('/hello{/name?}', ...);
+```
+
+**It's important to note the "/" inside the "{". If you leave this outside the curl brace it is not optional and will
+be required for the route to match!**
+
+```php
+// parameter constraints - matches /hello/tonis but not /hello/1234
+$routes->get('/hello/{name:\w+}', ...);
+
+// the kitchen sink (id is required as a digit, name is optional and matches a-z and A-Z
+// matches /hello/1 or /hello/1-tonis
+$routes->get('/hello/{id:\d+}{-name?:[a-zA-Z]+}');
+```
+
 Assembling URLs
 ---------------
 
