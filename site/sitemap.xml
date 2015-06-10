@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://tonis.io/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://tonis.io/getting-started/installation/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://tonis.io/basics/actions/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://tonis.io/basics/routing/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://tonis.io/basics/services/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://tonis.io/basics/packages/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://tonis.io/advanced/lifecycle/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://tonis.io/development/vagrant/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://tonis.io/development/docker/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://tonis.io/other/components-and-packages/</loc>
+     <lastmod>2015-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

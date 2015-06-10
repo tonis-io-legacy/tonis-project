@@ -31,4 +31,5 @@ echo $tonis->run()->getBody();
 Documentation
 -------------
 
-Documentation can be found in the `docs/` subdirectory.
+Full documentation can be found on the [Tonis GitHub page](http://tonis-io.github.io/tonis/) or in the `docs/` 
+subdirectory.
