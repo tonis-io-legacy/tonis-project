@@ -22,7 +22,7 @@ Tonis includes the following features out of the box:
   * Single purpose actions vs controllers
   * Error Handling
   * Dependency Injection
-  * Middleware support
+  * Middleware enabled
   * PSR-7 compliant
   * Package (reusable chunks of code) management
   * 100% test coverage on all components
