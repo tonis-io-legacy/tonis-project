@@ -30,9 +30,7 @@ echo $tonis->run()->getBody();
 As Middleware
 -------------
 
-```sh
-composer create-project tonis/tonis --prefer-dist
-```
+See the [Middleware documentation](/advanced/middleware) for more information.
 
 Server Requirements
 -------------------
