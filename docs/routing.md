@@ -1,5 +1,5 @@
-Routing
-=======
+Routing (Tonis\Router)
+======================
 
 You define routes by using the `Tonis\Router\RouteCollection` available to Tonis. Additionally, packages may
 use the `configureRoutes()` method to define their routes.
