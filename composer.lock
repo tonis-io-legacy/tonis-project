@@ -517,12 +517,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/mvc.git",
-                "reference": "39d18308f27824a1c1f2cd3e11b0a16917ab9631"
+                "reference": "245ff8b80a7e026c9d3597a5ee5df86ce1ef2431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/mvc/zipball/39d18308f27824a1c1f2cd3e11b0a16917ab9631",
-                "reference": "39d18308f27824a1c1f2cd3e11b0a16917ab9631",
+                "url": "https://api.github.com/repos/tonis-io/mvc/zipball/245ff8b80a7e026c9d3597a5ee5df86ce1ef2431",
+                "reference": "245ff8b80a7e026c9d3597a5ee5df86ce1ef2431",
                 "shasum": ""
             },
             "require": {
@@ -572,7 +572,7 @@
                 }
             ],
             "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
-            "time": "2015-06-09 16:20:34"
+            "time": "2015-06-10 02:55:37"
         },
         {
             "name": "tonis/package",
