@@ -8,8 +8,10 @@ No pull request will ever be merged that violates any of these standards.
 The Name
 --------
 
-Kyle originally got into programming by writing scripts for a game called Gemstone III (now Gemstone IV). The name comes 
-from Tonis in Gemstone's world of of Elanthia. Tonis is the messenger of the gods and is renowned for his speed.
+Kyle originally got into programming by writing scripts for a game called [Gemstone III](http://www.play.net/gs4) 
+(now Gemstone IV). The name comes from [Tonis](https://gswiki.play.net/mediawiki/index.php/Tonis) in Gemstone's world of 
+[Elanthia](https://gswiki.play.net/mediawiki/index.php/Elanthia). Tonis is the messenger of the gods and is renowned for 
+his speed.
  
 Features
 --------
