@@ -16,7 +16,6 @@ composer require tonis/mvc
 ```
 
 ```php
-<?php
 require __DIR__ . '/vendor/autoload.php';
 
 $tonis = (new \Tonis\Mvc\Factory\TonisFactory)->createWeb();
