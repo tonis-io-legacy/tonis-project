@@ -18,25 +18,11 @@ HTTP Verbs
 The route collection provides methods mapped to HTTP verbs as a convenience.
 
 ```php
-$routes->get('/', function () {
-    //
-});
-
-$routes->post('/', function () {
-    //
-});
-
-$routes->patch('/', function () {
-    //
-});
-
-$routes->put('/', function () {
-    //
-});
-
-$routes->delete('/', function () {
-    //
-});
+$routes->get('/', function () { ... });
+$routes->post('/', function () { ... });
+$routes->patch('/', function () { ... });
+$routes->put('/', function () { ... });
+$routes->delete('/', function () { ... });
 ```
 
 Route Handler
