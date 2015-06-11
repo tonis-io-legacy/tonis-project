@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "35d12cfc9737f5bab1751c294e3aab33",
+    "hash": "0fd89dcb17ce95459ae8da31ba32fa10",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -32,80 +32,6 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
-        },
-        {
-            "name": "kriswallsmith/assetic",
-            "version": "v1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "b20efe38845d20458702f97f3ff625d80805897b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/b20efe38845d20458702f97f3ff625d80805897b",
-                "reference": "b20efe38845d20458702f97f3ff625d80805897b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1",
-                "symfony/process": "~2.1"
-            },
-            "require-dev": {
-                "cssmin/cssmin": "*",
-                "joliclic/javascript-packer": "*",
-                "kamicane/packager": "*",
-                "leafo/lessphp": "*",
-                "leafo/scssphp": "*",
-                "leafo/scssphp-compass": "*",
-                "mrclay/minify": "*",
-                "patchwork/jsqueeze": "~1.0",
-                "phpunit/phpunit": "~4",
-                "psr/log": "~1.0",
-                "ptachoire/cssembed": "*",
-                "twig/twig": "~1.6"
-            },
-            "suggest": {
-                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
-                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
-                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
-                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
-                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
-                "twig/twig": "Assetic provides the integration with the Twig templating engine"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Assetic": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
-                }
-            ],
-            "description": "Asset Management for PHP",
-            "homepage": "https://github.com/kriswallsmith/assetic",
-            "keywords": [
-                "assets",
-                "compression",
-                "minification"
-            ],
-            "time": "2014-12-12 05:04:05"
         },
         {
             "name": "league/plates",
@@ -210,16 +136,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "7f0bec04961c61c961df0cb8c2ae88dbfd83f399"
+                "reference": "564398bc1f33faf92fc2ec86859983d30eb81806"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/7f0bec04961c61c961df0cb8c2ae88dbfd83f399",
-                "reference": "7f0bec04961c61c961df0cb8c2ae88dbfd83f399",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/564398bc1f33faf92fc2ec86859983d30eb81806",
+                "reference": "564398bc1f33faf92fc2ec86859983d30eb81806",
                 "shasum": ""
             },
             "require": {
@@ -263,104 +189,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-29 16:22:24"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v2.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Process.git",
-                "reference": "e0a82b58e36afc60f8e79b8bc85a22bb064077c1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/e0a82b58e36afc60f8e79b8bc85a22bb064077c1",
-                "reference": "e0a82b58e36afc60f8e79b8bc85a22bb064077c1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-05-15 13:33:16"
-        },
-        {
-            "name": "tonis/asset",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tonis-io/asset.git",
-                "reference": "57187130e546a5486caaede5766f5eeb1753cfd9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/asset/zipball/57187130e546a5486caaede5766f5eeb1753cfd9",
-                "reference": "57187130e546a5486caaede5766f5eeb1753cfd9",
-                "shasum": ""
-            },
-            "require": {
-                "kriswallsmith/assetic": "^1.1",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0",
-                "squizlabs/php_codesniffer": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Tonis\\Asset\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kyle Spraggs",
-                    "email": "theman@spiffyjr.me"
-                }
-            ],
-            "description": "Tonis\\Asset is a light-weight, HHVM compatible, and dependency lite package manager.",
-            "time": "2015-06-09 02:53:03"
+            "time": "2015-06-10 15:30:22"
         },
         {
             "name": "tonis/di",
@@ -614,12 +443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/tonis.git",
-                "reference": "44431657f0f6a753aa3ea84a4c356bff206b7281"
+                "reference": "9c842ec7623aa2ad8314f08a05de980bd1af588c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/44431657f0f6a753aa3ea84a4c356bff206b7281",
-                "reference": "44431657f0f6a753aa3ea84a4c356bff206b7281",
+                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/9c842ec7623aa2ad8314f08a05de980bd1af588c",
+                "reference": "9c842ec7623aa2ad8314f08a05de980bd1af588c",
                 "shasum": ""
             },
             "require": {
@@ -669,7 +498,7 @@
                 }
             ],
             "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware layer.",
-            "time": "2015-06-11 14:14:54"
+            "time": "2015-06-11 18:56:07"
         },
         {
             "name": "tonis/view",
@@ -677,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/view.git",
-                "reference": "04e9430208ff4c7011e7401021ddec96c47b7188"
+                "reference": "a5d2cfb9569a2ac267de2d802d3f415b6b3b4386"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/view/zipball/04e9430208ff4c7011e7401021ddec96c47b7188",
-                "reference": "04e9430208ff4c7011e7401021ddec96c47b7188",
+                "url": "https://api.github.com/repos/tonis-io/view/zipball/a5d2cfb9569a2ac267de2d802d3f415b6b3b4386",
+                "reference": "a5d2cfb9569a2ac267de2d802d3f415b6b3b4386",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +550,7 @@
                 }
             ],
             "description": "Tonis\\View is a light-weight, HHVM compatible, and dependency free view compatability layer. It does not provide its own templating system!",
-            "time": "2015-06-08 15:21:08"
+            "time": "2015-06-11 21:40:58"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1282,16 +1111,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.2",
+            "version": "4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e0c63329c8c4185296b8d357daa5c6bae43080f"
+                "reference": "41fea1e84ed84d373f5ac099a1276c4358c90708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e0c63329c8c4185296b8d357daa5c6bae43080f",
-                "reference": "8e0c63329c8c4185296b8d357daa5c6bae43080f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/41fea1e84ed84d373f5ac099a1276c4358c90708",
+                "reference": "41fea1e84ed84d373f5ac099a1276c4358c90708",
                 "shasum": ""
             },
             "require": {
@@ -1350,20 +1179,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-06 08:36:08"
+            "time": "2015-06-11 16:20:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7"
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/253c005852591fd547fc18cd5b7b43a1ec82d8f7",
-                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1234,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-05-29 05:19:18"
+            "time": "2015-06-11 15:55:48"
         },
         {
             "name": "sebastian/comparator",
@@ -1780,16 +1609,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4a29a5248aed4fb45f626a7bbbd330291492f5c3"
+                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4a29a5248aed4fb45f626a7bbbd330291492f5c3",
-                "reference": "4a29a5248aed4fb45f626a7bbbd330291492f5c3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
+                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
                 "shasum": ""
             },
             "require": {
@@ -1825,13 +1654,12 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-02 15:21:08"
+            "time": "2015-06-10 15:30:22"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tonis/asset": 20,
         "tonis/tonis": 20
     },
     "prefer-stable": true,

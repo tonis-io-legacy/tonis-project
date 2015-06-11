@@ -1,11 +1,13 @@
 <?php
 namespace ExamplePackage;
 
-use ExamplePackage\Home\IndexController;
-use Interop\Container\ContainerInterface;
+use ExamplePackage\Article\ArticleController;
 use Tonis\Tonis\Package\AbstractPackage;
 use Tonis\Router\RouteCollection;
 
+// Packages should extend \Tonis\Tonis\Package\AbstractPackage to make life easier.
+// In general you'll just configure your routes and services here.
+// Look at AbstractPackage for a full list of features.
 class ExamplePackage extends AbstractPackage
 {
     /**
@@ -13,7 +15,12 @@ class ExamplePackage extends AbstractPackage
      */
     public function configureRoutes(RouteCollection $routes)
     {
-        // route with an action class
-        $routes->get('/{name}', [IndexController::class, 'testAction']);
+        // micro-framework style routing
+        $routes->get('/', function () {
+            return 'Welcome to Tonis';
+        });
+
+        // routing with a dispatchable
+        $routes->get('/articles', [ArticleController::class, 'index']);
     }
 }

@@ -1,32 +1,29 @@
 Tonis
 =====
 
-Tonis is a PSR-7 micro-framework that can also be used as MVC middleware. Tonis was built for flexibility and performance
-while still having the modularity of larger frameworks. Tonis features an event-driven architecture that allows you to 
-easily customize the entire life-cycle for micro-services, apis, or even full on sites.
+This is a sample project that shows off how Tonis can work with a middleware framework like 
+[Stratigility](https://www.github.com/zendframework/zend-stratigility). The same source code is loaded for both the
+web and api portions. The former is rendered using PlatesPHP and the later is JSON dumped.
 
-Tonis is built with best practices in mind and features 100% unit test coverage, integration tests, and high quality code.
-No pull request will ever be merged that violates any of these standards.
-
-Quick Start
------------
+Installation
+------------
 
 ```sh
-composer require tonis/tonis
+git clone git@github.com:tonis-io/tonis-project
+cd tonis-project
+composer install
+cd public/
+php -S 127.0.0.1:8080 index.php
 ```
 
-```php
-require __DIR__ . '/vendor/autoload.php';
+Usage
+-----
 
-$tonis = (new \Tonis\Tonis\Factory\TonisFactory)->createWeb();
-$routes = $tonis->routes();
+http://127.0.0.1:8080 - for the sample micro-framework style route.
+http://127.0.0.1:8080/articles - to view the article output using PlatesPHP
+http://127.0.0.1:8080/api/articles - to view the article output using JSON
 
-$routes->get('/hello/{name}', function ($name) {
-    return 'Hello ' . $name;
-});
-
-echo $tonis->run()->getBody();
-```
+Both article endpoints use 100% identical user-land source code.
 
 Documentation
 -------------
