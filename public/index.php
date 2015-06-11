@@ -1,6 +1,6 @@
 <?php
 use ExamplePackage\ExamplePackage;
-use Tonis\Mvc\Factory\TonisFactory;
+use Tonis\Tonis\Factory\TonisFactory;
 use Zend\Diactoros\Server;
 use Zend\Stratigility\MiddlewarePipe;
 

@@ -1,5 +1,5 @@
 <?php
-use Tonis\Mvc\Factory\TonisFactory;
+use Tonis\Tonis\Factory\TonisFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 

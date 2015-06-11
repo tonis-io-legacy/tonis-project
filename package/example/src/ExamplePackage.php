@@ -3,7 +3,7 @@ namespace ExamplePackage;
 
 use ExamplePackage\Home\IndexController;
 use Interop\Container\ContainerInterface;
-use Tonis\Mvc\Package\AbstractPackage;
+use Tonis\Tonis\Package\AbstractPackage;
 use Tonis\Router\RouteCollection;
 
 class ExamplePackage extends AbstractPackage

@@ -12,13 +12,13 @@ Quick Start
 -----------
 
 ```sh
-composer require tonis/mvc
+composer require tonis/tonis
 ```
 
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-$tonis = (new \Tonis\Mvc\Factory\TonisFactory)->createWeb();
+$tonis = (new \Tonis\Tonis\Factory\TonisFactory)->createWeb();
 $routes = $tonis->routes();
 
 $routes->get('/hello/{name}', function ($name) {

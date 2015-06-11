@@ -1,5 +1,5 @@
 {
-    "name": "tonis/tonis",
+    "name": "tonis/tonis-project",
     "authors": [
         {
             "name": "Kyle Spraggs",
@@ -13,7 +13,7 @@
         "league/plates": "^3.0",
         "symfony/console": "^2.7",
         "tonis/asset": "^1.0@dev",
-        "tonis/mvc": "^1.0@dev",
+        "tonis/tonis": "^1.0@dev",
         "zendframework/zend-diactoros": "^1.0.0",
         "zendframework/zend-stratigility": "^1.0.0"
     },
