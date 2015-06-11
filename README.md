@@ -19,9 +19,9 @@ php -S 127.0.0.1:8080 index.php
 Usage
 -----
 
-http://127.0.0.1:8080 - for the sample micro-framework style route.
-http://127.0.0.1:8080/articles - to view the article output using PlatesPHP
-http://127.0.0.1:8080/api/articles - to view the article output using JSON
+  * http://127.0.0.1:8080 - for the sample micro-framework style route.
+  * http://127.0.0.1:8080/articles - to view the article output using PlatesPHP
+  * http://127.0.0.1:8080/api/articles - to view the article output using JSON
 
 Both article endpoints use 100% identical user-land source code.
 
