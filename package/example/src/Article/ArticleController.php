@@ -5,21 +5,20 @@ namespace ExamplePackage\Article;
 // This could be a single purpose action (ArticleIndexAction) as well.
 class ArticleController
 {
+    /** @var ArticleService */
+    private $articleService;
+
+    public function __construct(ArticleService $articleService)
+    {
+        $this->articleService = $articleService;
+    }
+
     public function index()
     {
         return [
             // The ViewModel conversion from array needs to know the template name.
             '$$template' => '@example-package/article/index',
-            'articles' => [
-                [
-                    'id' => 1,
-                    'title' => 'Foo',
-                ],
-                [
-                    'id' => 2,
-                    'title' => 'bar'
-                ]
-            ]
+            'articles' => $this->articleService->getArticles()
         ];
     }
 }
