@@ -8,7 +8,7 @@ use Tonis\Di\Container;
 use Tonis\Router\Router;
 use Tonis\Web\Package\AbstractPackage;
 
-// Packages should extend \Tonis\Web\Package\AbstractPackage to make life easier.
+// Packages should extend \Tonis\Web\Package\AbstractPackage to make things easier.
 // In general you'll just configure your routes and services here.
 // Look at AbstractPackage for a full list of features.
 class ExamplePackage extends AbstractPackage

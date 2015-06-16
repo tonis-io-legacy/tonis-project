@@ -1,7 +1,7 @@
 <?php
-use Tonis\Web\Factory\TonisFactory;
+use Tonis\Web\AppFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$console = (new TonisFactory)->createConsole();
+$console = (new AppFactory())->createConsole();
 $console->run();

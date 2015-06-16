@@ -15,6 +15,7 @@ class ArticleController
 
     public function index()
     {
+        throw new \RuntimeException('Well shit');
         return [
             // The ViewModel conversion from array needs to know the template name.
             '$$template' => '@example-package/article/index',
