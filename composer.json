@@ -11,18 +11,18 @@
     "require": {
         "php": ">=5.5",
         "league/plates": "^3.0",
-        "symfony/console": "^2.7",
-        "tonis/web": "^1.0@dev",
-        "zendframework/zend-diactoros": "^1.0.0",
-        "zendframework/zend-stratigility": "^1.0.0"
+        "tonis-io/tonis": "^1.0@dev",
+        "tonis-io/response-cache": "^1.0@dev",
+        "tonis-io/response-time": "^1.0@dev",
+        "zendframework/zend-diactoros": "^1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.0"
     },
     "autoload": {
         "psr-4": {
-            "ExamplePackage\\": [
-                "package/example/src/"
+            "Article\\": [
+                "app/src/"
             ]
         }
     },

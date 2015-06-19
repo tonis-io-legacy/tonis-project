@@ -1,7 +1,7 @@
-<?php $this->layout('layout::layout') ?>
+<?php $this->layout('layout/layout') ?>
 
 <?php $this->start('body') ?>
-    Article List
+    <h1>Article List</h1>
     <hr>
 
     <?php foreach ($articles as $article) : ?>
