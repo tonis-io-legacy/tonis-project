@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5f32ced673e4acb28e53e2ff139e2b8",
+    "hash": "93dee9417bd24d33268fe02d07e03765",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -32,58 +32,6 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
-        },
-        {
-            "name": "league/plates",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/plates.git",
-                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/plates/zipball/c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
-                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
-                "shasum": ""
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1.4.0",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Plates\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Reinink",
-                    "email": "jonathan@reinink.ca",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
-            "homepage": "http://platesphp.com",
-            "keywords": [
-                "league",
-                "package",
-                "templates",
-                "templating",
-                "views"
-            ],
-            "time": "2014-10-21 12:06:12"
         },
         {
             "name": "psr/http-message",
@@ -184,129 +132,17 @@
             "time": "2015-06-19 04:04:34"
         },
         {
-            "name": "tonis-io/response-cache",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tonis-io/response-cache.git",
-                "reference": "d83464b28effa432d8d1e52e34e9f31476dbaed9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/response-cache/zipball/d83464b28effa432d8d1e52e34e9f31476dbaed9",
-                "reference": "d83464b28effa432d8d1e52e34e9f31476dbaed9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0",
-                "squizlabs/php_codesniffer": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Tonis\\ResponseCache\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tonis\\ResponseCache\\": [
-                        "test/"
-                    ]
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kyle Spraggs",
-                    "email": "theman@spiffyjr.me"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/tonis-io/response-cache/tree/master",
-                "issues": "https://github.com/tonis-io/response-cache/issues"
-            },
-            "time": "2015-06-19 04:51:35"
-        },
-        {
-            "name": "tonis-io/response-time",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tonis-io/response-time.git",
-                "reference": "c920d67236bc83d5a1fcd67f6b5f49eaa3da346f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/response-time/zipball/c920d67236bc83d5a1fcd67f6b5f49eaa3da346f",
-                "reference": "c920d67236bc83d5a1fcd67f6b5f49eaa3da346f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0",
-                "squizlabs/php_codesniffer": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Tonis\\ResponseTime\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tonis\\ResponseTime\\": [
-                        "test/"
-                    ]
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kyle Spraggs",
-                    "email": "theman@spiffyjr.me"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/tonis-io/response-time/tree/master",
-                "issues": "https://github.com/tonis-io/response-time/issues"
-            },
-            "time": "2015-06-19 04:48:49"
-        },
-        {
             "name": "tonis-io/tonis",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/tonis.git",
-                "reference": "210b4ebc217fa994f27bc3210d79b452ab04cdba"
+                "reference": "959a987330b21a9420662bf62a5a69aa17fc06ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/210b4ebc217fa994f27bc3210d79b452ab04cdba",
-                "reference": "210b4ebc217fa994f27bc3210d79b452ab04cdba",
+                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/959a987330b21a9420662bf62a5a69aa17fc06ce",
+                "reference": "959a987330b21a9420662bf62a5a69aa17fc06ce",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +183,7 @@
                 }
             ],
             "description": "Tonis is a middleware framework built on top of Stratigility.",
-            "time": "2015-06-19 04:12:36"
+            "time": "2015-06-20 02:40:29"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -662,16 +498,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e"
+                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be2286cb8c7e1773eded49d9719219e6f74f9e3e",
-                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
+                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
                 "shasum": ""
             },
             "require": {
@@ -720,7 +556,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-09 13:05:42"
+            "time": "2015-06-19 07:11:55"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1454,9 +1290,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tonis-io/tonis": 20,
-        "tonis-io/response-cache": 20,
-        "tonis-io/response-time": 20
+        "tonis-io/tonis": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
