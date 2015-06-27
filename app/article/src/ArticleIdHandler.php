@@ -19,7 +19,7 @@ class ArticleIdHandler
 
     public function __invoke(Request $request, Response $response, $next)
     {
-        $article = $this->repository->find($request['article_id']);
+        $article = $this->repository->find((int) $request['article_id']);
 
         if (!$article) {
             return $next($request, $response, new \InvalidArgumentException('Article not found', 404));
