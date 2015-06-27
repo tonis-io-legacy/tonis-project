@@ -13,8 +13,8 @@ class ArticleAction
         $this->articleRepository = $articleRepository;
     }
 
-    public function __invoke(Request $req, Response $res)
+    public function __invoke(Request $request, Response $response)
     {
-        return $res->render('index', ['articles' => $this->articleRepository->findAll()]);
+        return $response->render('index', ['articles' => $this->articleRepository->findAll()]);
     }
 }

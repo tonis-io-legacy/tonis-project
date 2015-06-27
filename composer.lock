@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93dee9417bd24d33268fe02d07e03765",
+    "hash": "0b4d0cf39f3c6db20803bd90b761a598",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -32,6 +32,159 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "league/container",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/container.git",
+                "reference": "7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15",
+                "reference": "7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "orno/di": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev",
+                    "dev-1.x": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Container\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com",
+                    "homepage": "http://philipobenito.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fast and intuitive dependency injection container.",
+            "homepage": "https://github.com/thephpleague/container",
+            "keywords": [
+                "container",
+                "dependency",
+                "di",
+                "injection",
+                "league"
+            ],
+            "time": "2015-04-05 17:14:48"
+        },
+        {
+            "name": "league/plates",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/plates.git",
+                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
+                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.4.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Plates\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
+            "homepage": "http://platesphp.com",
+            "keywords": [
+                "league",
+                "package",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "time": "2014-10-21 12:06:12"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "31fa86924556b80735f98b294a7ffdfb26789f22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/31fa86924556b80735f98b294a7ffdfb26789f22",
+                "reference": "31fa86924556b80735f98b294a7ffdfb26789f22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2015-06-18 19:15:47"
         },
         {
             "name": "psr/http-message",
@@ -83,25 +236,23 @@
             "time": "2015-05-04 20:22:00"
         },
         {
-            "name": "tonis-io/di",
+            "name": "tonis-io/response-time",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tonis-io/di.git",
-                "reference": "b227b8d1b7eed89d15c8e9fa5092ea942f7f0c91"
+                "url": "https://github.com/tonis-io/response-time.git",
+                "reference": "c920d67236bc83d5a1fcd67f6b5f49eaa3da346f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/di/zipball/b227b8d1b7eed89d15c8e9fa5092ea942f7f0c91",
-                "reference": "b227b8d1b7eed89d15c8e9fa5092ea942f7f0c91",
+                "url": "https://api.github.com/repos/tonis-io/response-time/zipball/c920d67236bc83d5a1fcd67f6b5f49eaa3da346f",
+                "reference": "c920d67236bc83d5a1fcd67f6b5f49eaa3da346f",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "^1.1",
                 "php": ">=5.5"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.2",
                 "phpunit/phpunit": "^4.0",
                 "squizlabs/php_codesniffer": "^1.0"
             },
@@ -113,7 +264,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Tonis\\Di\\": [
+                    "Tonis\\ResponseTime\\": [
                         "src/"
                     ]
                 }
@@ -128,8 +279,7 @@
                     "email": "theman@spiffyjr.me"
                 }
             ],
-            "description": "A light-weight, HHVM compatible, and dependency lite DI container.",
-            "time": "2015-06-19 04:04:34"
+            "time": "2015-06-19 04:48:49"
         },
         {
             "name": "tonis-io/tonis",
@@ -137,17 +287,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonis-io/tonis.git",
-                "reference": "959a987330b21a9420662bf62a5a69aa17fc06ce"
+                "reference": "6d18e42521447bee7036d31a57d88121797e1018"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/959a987330b21a9420662bf62a5a69aa17fc06ce",
-                "reference": "959a987330b21a9420662bf62a5a69aa17fc06ce",
+                "url": "https://api.github.com/repos/tonis-io/tonis/zipball/6d18e42521447bee7036d31a57d88121797e1018",
+                "reference": "6d18e42521447bee7036d31a57d88121797e1018",
                 "shasum": ""
             },
             "require": {
+                "container-interop/container-interop": "^1.1",
+                "league/container": "^1.3",
+                "league/plates": "^3.0",
+                "nikic/fast-route": "^0.6",
                 "php": ">=5.5",
-                "tonis-io/di": "~1.0-dev",
+                "zendframework/zend-diactoros": "^1.0",
                 "zendframework/zend-stratigility": "^1.0"
             },
             "require-dev": {
@@ -155,9 +309,6 @@
                 "scrutinizer/ocular": "^1.1.1",
                 "squizlabs/php_codesniffer": "^1.0",
                 "zendframework/zend-diactoros": "^1.0"
-            },
-            "suggest": {
-                "zendframework/zend-diactoros": "Or another PSR-7 implementation"
             },
             "type": "library",
             "extra": {
@@ -183,20 +334,20 @@
                 }
             ],
             "description": "Tonis is a middleware framework built on top of Stratigility.",
-            "time": "2015-06-20 02:40:29"
+            "time": "2015-06-27 18:26:30"
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "1dce37e6df582f65d7db29cabb3310ddc50b4a50"
+                "reference": "eeedadd333b80bb5d93559e2285047463fe4fe33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/1dce37e6df582f65d7db29cabb3310ddc50b4a50",
-                "reference": "1dce37e6df582f65d7db29cabb3310ddc50b4a50",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/eeedadd333b80bb5d93559e2285047463fe4fe33",
+                "reference": "eeedadd333b80bb5d93559e2285047463fe4fe33",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +384,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2015-06-04 19:49:11"
+            "time": "2015-06-25 18:07:28"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -281,16 +432,16 @@
         },
         {
             "name": "zendframework/zend-stratigility",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stratigility.git",
-                "reference": "ecc54a0290e0b526a154072e9410d3bd1d2b9b16"
+                "reference": "47a8cd2348b44afa9ec750c678ba4cbf7b07b2b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/ecc54a0290e0b526a154072e9410d3bd1d2b9b16",
-                "reference": "ecc54a0290e0b526a154072e9410d3bd1d2b9b16",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/47a8cd2348b44afa9ec750c678ba4cbf7b07b2b0",
+                "reference": "47a8cd2348b44afa9ec750c678ba4cbf7b07b2b0",
                 "shasum": ""
             },
             "require": {
@@ -329,7 +480,7 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2015-06-16 12:58:05"
+            "time": "2015-06-25 15:07:30"
         }
     ],
     "packages-dev": [
@@ -607,16 +758,16 @@
         },
         {
             "name": "phpunit/php-text-template",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a"
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
-                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "shasum": ""
             },
             "require": {
@@ -625,20 +776,17 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "Text/"
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
+                    "email": "sebastian@phpunit.de",
                     "role": "lead"
                 }
             ],
@@ -647,7 +795,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2014-01-30 17:20:04"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
@@ -741,16 +889,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.4",
+            "version": "4.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e5f851f324f7add846316f39e668e9deac97a103"
+                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e5f851f324f7add846316f39e668e9deac97a103",
-                "reference": "e5f851f324f7add846316f39e668e9deac97a103",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f6701ef3faea759acd1910a7751d8d102a7fd5bc",
+                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +957,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-18 13:33:26"
+            "time": "2015-06-21 07:23:36"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1204,16 +1352,16 @@
         },
         {
             "name": "sebastian/version",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4"
+                "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
-                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
+                "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
                 "shasum": ""
             },
             "type": "library",
@@ -1235,7 +1383,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-02-24 06:35:25"
+            "time": "2015-06-21 13:59:46"
         },
         {
             "name": "symfony/yaml",
@@ -1288,14 +1436,15 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
+        "tonis-io/response-time": 20,
         "tonis-io/tonis": 20
     },
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5"
+        "php": ">=5.6"
     },
     "platform-dev": []
 }

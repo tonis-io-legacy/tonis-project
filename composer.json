@@ -9,9 +9,9 @@
     "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.5",
-        "tonis-io/tonis": "^1.0@dev",
-        "zendframework/zend-diactoros": "^1.0.0"
+        "php": ">=5.6",
+        "tonis-io/response-time": "^1.0@dev",
+        "tonis-io/tonis": "^1.0@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.0"
@@ -19,12 +19,10 @@
     "autoload": {
         "psr-4": {
             "Article\\": [
-                "app/src/"
+                "app/article/src/"
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
