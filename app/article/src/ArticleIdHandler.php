@@ -6,13 +6,13 @@ use Tonis\Http\Response;
 
 class ArticleIdHandler
 {
-    /** @var ArticleRepository */
+    /** @var Repository */
     private $repository;
 
     /**
-     * @param ArticleRepository $repository
+     * @param Repository $repository
      */
-    public function __construct(ArticleRepository $repository)
+    public function __construct(Repository $repository)
     {
         $this->repository = $repository;
     }

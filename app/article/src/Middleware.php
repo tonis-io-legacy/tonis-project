@@ -29,7 +29,7 @@ class Middleware extends AbstractMiddleware
         $router = $app->router();
 
         // If you want to use single-purpose actions.
-        $router->get('/', $container->get(ArticleAction::class));
+        $router->get('/', $container->get(IndexAction::class));
 
         // Any route with article_id as a parameter will trigger this handler.
         // It sets the article parameter on the $request using ArrayAccess so that you don't have to duplicate logic.
@@ -37,7 +37,7 @@ class Middleware extends AbstractMiddleware
 
         // If you want to use traditional controllers. The request will contain an `article` parameter as specified
         // by the article_id param handler above. If the article is not found this middleware is never even called.
-        $router->get('/{article_id}', [$container->get(ArticleController::class), 'view']);
+        $router->get('/{article_id}', [$container->get(Controller::class), 'view']);
 
         return $router;
     }
