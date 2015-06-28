@@ -1,6 +1,9 @@
 <?php
 namespace Article;
 
+/**
+ * Simple array repository that returns an article or all articles.
+ */
 class Repository
 {
     private $articles = [
