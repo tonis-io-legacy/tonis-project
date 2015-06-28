@@ -12,7 +12,7 @@ class Middleware extends AbstractMiddleware
     /**
      * Configure the middleware here. Access to the App is available. If you have routing you should
      * use $app->router() to get a router instance and then return it so that the AbstractMiddleware
-     * can add it to the pipeline.
+     * can add run it.
      *
      * @param App $app
      * @return \Tonis\Router
