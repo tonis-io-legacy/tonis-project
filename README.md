@@ -1,7 +1,7 @@
 Tonis
 =====
 
-This is a sample project with a recommended structure.
+This is a sample project with a recommended structure for simple applications.
 
 Installation
 ------------
