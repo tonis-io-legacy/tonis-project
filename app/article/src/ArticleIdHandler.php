@@ -4,6 +4,10 @@ namespace Article;
 use Tonis\Http\Request;
 use Tonis\Http\Response;
 
+/**
+ * This is a param middleware that looks for `article_id` in the route. If it exists, then this middleware
+ * is ran. If no article is available it invokes error middleware using the fourth argument on $next.
+ */
 class ArticleIdHandler
 {
     /** @var Repository */
