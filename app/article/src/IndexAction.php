@@ -4,6 +4,10 @@ namespace Article;
 use Tonis\Http\Request;
 use Tonis\Http\Response;
 
+/**
+ * Sample of an "Action" with the Action-Domain-Responder.
+ * See: https://github.com/pmjones/adr
+ */
 class IndexAction
 {
     private $articleRepository;

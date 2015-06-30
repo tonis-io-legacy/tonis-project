@@ -24,4 +24,4 @@ Usage
 Documentation
 -------------
 
-Full documentation can be found on the [Tonis GitHub page](http://docs.tonis.io/).
+Full documentation can be found on the [Tonis documentation page](http://docs.tonis.io/).
