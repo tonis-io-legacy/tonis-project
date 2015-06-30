@@ -6,10 +6,12 @@
             "email": "theman@spiffyjr.me"
         }
     ],
-    "description": "Tonis is a light-weight, PSR-7 compliant, MVC middleware/micro-framework.",
+    "description": "Sample project for the Tonis framework.",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.6",
+        "php": ">=5.5",
+        "monolog/monolog": "^1.0",
+        "tonis-io/error-handler": "^1.0@dev",
         "tonis-io/response-time": "^1.0@dev",
         "tonis-io/tonis": "^1.0@dev"
     },
