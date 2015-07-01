@@ -13,12 +13,6 @@ $view = $app->getView();
 // If you're building an API you won't need a view strategy.
 $view->addStrategy('article', new PlatesStrategy(new Engine(__DIR__ . '/view')));
 
-// Optionally, we can reuse the built in strategy and add a folder.
-//$view
-//    ->getStrategy('tonis')
-//    ->getEngine()
-//    ->addFolder('article', __DIR__ . '/view');
-
 $container = $app->getContainer();
 
 // Create a router from the application.
