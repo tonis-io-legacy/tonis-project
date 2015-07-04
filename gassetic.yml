@@ -1,0 +1,36 @@
+requires:
+    less: gulp-less
+    minify: gulp-minify-css
+    uglify: gulp-uglify
+mimetypes:
+  css:
+    prod:
+      outputFolder: www/asset
+      webPath: /asset
+      tasks:
+        - { name: less }
+        - { name: minify }
+
+    files:
+      css:
+        - bower_components/bootstrap/less/bootstrap.less
+        - app/article/asset/less/article.less
+
+  js:
+    prod:
+      outputFolder: www/asset
+      webPath: /asset
+      tasks:
+        - { name: uglify }
+
+    files:
+      js:
+        - bower_components/jquery/dist/jquery.min.js
+        - bower_components/bootstrap/dist/js/bootstrap.min.js
+
+replacementPaths:
+    - app/article/view/layout/*.php
+
+default:
+  - css
+  - js

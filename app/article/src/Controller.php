@@ -11,6 +11,6 @@ class Controller
 {
     public function view(Request $request, Response $response)
     {
-        return $response->render('view', ['article' => $request['article']]);
+        return $response->render('article::view', ['article' => $request['article']]);
     }
 }

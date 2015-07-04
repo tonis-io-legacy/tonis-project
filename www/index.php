@@ -2,26 +2,36 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = new Tonis\App;
+// Decline static file requests back to the PHP built-in webserver
+// You can remove this if you're not using the built in webserver for dev.
+if (php_sapi_name() === 'cli-server') {
+    $path = realpath(__DIR__ . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    if (__FILE__ !== $path && is_file($path)) {
+        return false;
+    }
+    unset($path);
+}
+
+//$app = new Tonis\App;
+
+// use pimple instead of League\Container (optional)
+$app = new \Tonis\App;
 
 // Sample Middleware
 // Adds the X-Response-Time (configurable) header to all Responses.
 // composer require tonis-io/response-time
 $app->add(new Tonis\ResponseTime\ResponseTime);
 
-$app->get('/', function ($request, $response, $next) {
-    return $response->write('Welcome to Tonis');
+$app->get('/', function ($req, $res) {
+    return $res->write('Hello from Tonis');
 });
 
-// Article handler - similar to modules, bundles, or packages of other frameworks.
-$app->add('/articles', include __DIR__ . '/../app/article/setup.php');
+// Attach the article setup (view the file for more info).
+$app->add(include __DIR__ . '/../app/article/setup.php');
 
 // Tonis\ErrorHandler includes logging via Monolog.
 // composer require tonis-io/error-handler
-$app->add(new Tonis\ErrorHandler\ErrorHandler(new \Monolog\Logger('default')));
-
-// If nothing matched at this point it must be a 404. You can add your own handler
-// but Tonis also includes not found handler by default.
+//$app->add(new Tonis\ErrorHandler\ErrorHandler(new \Monolog\Logger('tonis')));
 
 $server = Zend\Diactoros\Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();

@@ -19,6 +19,6 @@ class IndexAction
 
     public function __invoke(Request $request, Response $response)
     {
-        return $response->render('index', ['articles' => $this->articleRepository->findAll()]);
+        return $response->render('article::index', ['articles' => $this->articleRepository->findAll()]);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "tonis",
+  "version": "0.2.0",
+  "homepage": "https://github.com/tonis-io/tonis-project",
+  "authors": [
+    "Kyle Spraggs <theman@spiffyjr.me>"
+  ],
+  "license": "BSD-3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
