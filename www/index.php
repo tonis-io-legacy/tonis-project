@@ -22,10 +22,6 @@ $app = new \Tonis\App;
 // composer require tonis-io/response-time
 $app->add(new Tonis\ResponseTime\ResponseTime);
 
-$app->get('/', function ($req, $res) {
-    return $res->write('Hello from Tonis');
-});
-
 // Attach the article setup (view the file for more info).
 $app->add(include __DIR__ . '/../app/article/setup.php');
 
