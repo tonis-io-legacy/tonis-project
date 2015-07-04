@@ -14,12 +14,16 @@ cd www/
 php -S 127.0.0.1:8080 index.php
 ```
 
+Assets
+------
+
+Assets are generated using [Gassetic](https://github.com/romanschejbal/gassetic). Follow the instructions on the project
+page to generate assets.
+
 Usage
 -----
 
-  * http://127.0.0.1:8080 - Welcome to Tonis
-  * http://127.0.0.1:8080/articles/ - Article landing page
-  * http://127.0.0.1:8080/articles/{id} - View article page
+  * Load up http://127.0.0.1:8080
 
 Documentation
 -------------
