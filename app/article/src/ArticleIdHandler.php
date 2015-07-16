@@ -24,18 +24,16 @@ class ArticleIdHandler
     /**
      * @param Request $request
      * @param Response $response
-     * @param callable $next
-     * @return \Psr\Http\Message\ResponseInterface
+     * @param int $value
      */
-    public function __invoke(Request $request, Response $response, callable $next)
+    public function __invoke(Request $request, Response $response, $value)
     {
-        $article = $this->repository->find((int) $request['article_id']);
+        $article = $this->repository->find((int) $value);
 
         if (!$article) {
             throw new \InvalidArgumentException('Article not found', 404);
         }
 
         $request['article'] = $article;
-        return $next($request, $response);
     }
 }
