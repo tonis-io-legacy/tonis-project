@@ -25,9 +25,5 @@ $app->add(new Tonis\ResponseTime\ResponseTime);
 // Attach the article setup (view the file for more info).
 $app->add(include __DIR__ . '/../app/article/setup.php');
 
-// Tonis\ErrorHandler includes logging via Monolog.
-// composer require tonis-io/error-handler
-//$app->add(new Tonis\ErrorHandler\ErrorHandler(new \Monolog\Logger('tonis')));
-
 $server = Zend\Diactoros\Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();

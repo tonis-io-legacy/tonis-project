@@ -10,12 +10,8 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
-        "monolog/monolog": "^1.0",
-        "tonis-io/error-handler": "^1.0@dev",
         "tonis-io/response-time": "^1.0@dev",
-        "tonis-io/tonis": "^1.0@dev",
-        "pimple/pimple": "^3.0",
-        "twig/twig": "^1.18"
+        "tonis-io/tonis": "^1.0@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.0"
