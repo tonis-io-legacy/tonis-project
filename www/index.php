@@ -12,18 +12,7 @@ if (php_sapi_name() === 'cli-server') {
     unset($path);
 }
 
-//$app = new Tonis\App;
-
-// use pimple instead of League\Container (optional)
-$app = new \Tonis\App;
-
-// Sample Middleware
-// Adds the X-Response-Time (configurable) header to all Responses.
-// composer require tonis-io/response-time
-$app->add(new Tonis\ResponseTime\ResponseTime);
-
-// Attach the article setup (view the file for more info).
-$app->add(include __DIR__ . '/../app/article/setup.php');
+$app = include __DIR__ . '/../app/bootstrap.php';
 
 $server = Zend\Diactoros\Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();
