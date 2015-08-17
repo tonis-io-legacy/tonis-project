@@ -1,7 +1,4 @@
 <?php
-
-require __DIR__ . '/../vendor/autoload.php';
-
 // Decline static file requests back to the PHP built-in webserver
 // You can remove this if you're not using the built in webserver for dev.
 if (php_sapi_name() === 'cli-server') {

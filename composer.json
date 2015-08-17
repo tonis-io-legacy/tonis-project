@@ -10,6 +10,7 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
+        "php-pm/php-pm": "dev-master",
         "tonis-io/response-time": "^1.0@dev",
         "tonis-io/tonis": "^1.0@dev"
     },
