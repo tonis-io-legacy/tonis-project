@@ -1,7 +1,4 @@
 <?php
-
-require __DIR__ . '/../vendor/autoload.php';
-
 // Decline static file requests back to the PHP built-in webserver
 // You can remove this if you're not using the built in webserver for dev.
 if (php_sapi_name() === 'cli-server') {
@@ -12,23 +9,7 @@ if (php_sapi_name() === 'cli-server') {
     unset($path);
 }
 
-//$app = new Tonis\App;
-
-// use pimple instead of League\Container (optional)
-$app = new Tonis\App;
-
-// Sample Middleware
-// Adds the X-Response-Time (configurable) header to all Responses.
-// composer require tonis-io/response-time
-$app->add(new Tonis\ResponseTime\ResponseTime);
-
-// Tonis packages can be added
-// Packages are Tonis specific middlewre
-// composer require tonis-io/doctrine-orm
-$app->package(new Tonis\DoctrineORM\Package([]));
-
-// Attach the article setup (view the file for more info).
-$app->package(new Article\Package);
+$app = include __DIR__ . '/../app/bootstrap.php';
 
 $server = Zend\Diactoros\Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();

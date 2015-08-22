@@ -10,7 +10,6 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
-        "tonis-io/doctrine-orm": "^1.0@dev",
         "tonis-io/response-time": "^1.0@dev",
         "tonis-io/tonis": "^1.0@dev"
     },
