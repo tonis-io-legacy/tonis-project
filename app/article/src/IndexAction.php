@@ -19,6 +19,7 @@ class IndexAction
 
     public function __invoke(Request $request, Response $response)
     {
+        $request->app()->getContainer()->get(\Doctrine\ORM\EntityManager::class);
         return $response->render('article::index', ['articles' => $this->articleRepository->findAll()]);
     }
 }

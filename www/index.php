@@ -15,15 +15,20 @@ if (php_sapi_name() === 'cli-server') {
 //$app = new Tonis\App;
 
 // use pimple instead of League\Container (optional)
-$app = new \Tonis\App;
+$app = new Tonis\App;
 
 // Sample Middleware
 // Adds the X-Response-Time (configurable) header to all Responses.
 // composer require tonis-io/response-time
 $app->add(new Tonis\ResponseTime\ResponseTime);
 
+// Tonis packages can be added
+// Packages are Tonis specific middlewre
+// composer require tonis-io/doctrine-orm
+$app->package(new Tonis\DoctrineORM\Package([]));
+
 // Attach the article setup (view the file for more info).
-$app->add(include __DIR__ . '/../app/article/setup.php');
+$app->package(new Article\Package);
 
 $server = Zend\Diactoros\Server::createServer($app, $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $server->listen();
