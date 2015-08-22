@@ -17,9 +17,7 @@
             <h1>Welcome to Tonis!</h1>
             <p>
                 Tonis is a PSR-7 minimal and flexible web application framework built for simplicity and performance.
-                Tonis is inspired by <a href="http://expressjs.com" target="_blank">Express</a> and uses
-                <a href="http://github.com/zendframework/zend-stratigility" target="_blank">Stratigility</a> for the
-                middleware pipeline.
+                Tonis is inspired by <a href="http://expressjs.com" target="_blank">ExpressJS</a>.
             </p>
             <p>
                 <a class="btn btn-primary btn-lg" href="http://docs.tonis.io" role="button">
