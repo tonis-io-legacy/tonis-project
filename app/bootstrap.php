@@ -9,6 +9,6 @@ $app = new Tonis\App;
 $app->add(new Tonis\ResponseTime\ResponseTime);
 
 // Attach the article setup (view the file for more info).
-$app->add(include __DIR__ . '/article/setup.php');
+$app->package(new Article\Package);
 
 return $app;
